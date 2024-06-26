@@ -51,8 +51,8 @@ class와 id에 동시에 색을 입혔을 경우에는 id가 우선권을 가짐
 } */
 header li {
     color: green;
-    list-style: ;
-    margin: ;
+    list-style: none;
+    margin: 10px;
 }
 
 /* 속성 alt를 가진 이미지중에서도 html과 js를 수정하는것, 고치는 값이 같다면 쉼표사용 후 연결가능  */
