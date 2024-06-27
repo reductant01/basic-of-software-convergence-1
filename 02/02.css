@@ -51,8 +51,8 @@ class와 id에 동시에 색을 입혔을 경우에는 id가 우선권을 가짐
 } */
 header li {
     color: green;
-    list-style: ;
-    margin: ;
+    list-style: none;
+    margin: 10px;
 }
 
 /* 속성 alt를 가진 이미지중에서도 html과 js를 수정하는것, 고치는 값이 같다면 쉼표사용 후 연결가능  */
@@ -75,6 +75,7 @@ a {
     color: black;
     display: inline-flex;
     /* 박스영역으로 보이도록 수정 */
+    /* flex와의 차이점 = 단어 하나하나를 박스영역으로 만들기 위해 사용 */
     padding: 5px;
 }
 
@@ -99,7 +100,7 @@ article {
 
 header {
     display: flex;
-    /*  */
+    /* header박스안의 div와 ul을 가로로 정렬하기 위해 사용 */
     justify-content: space-between;
     /* 좌우 정렬( 공간에 맞게 정렬 ) */
     align-items: start;
@@ -116,45 +117,21 @@ div, ul {
 }
 
 /* 미디어 쿼리 */
-/* 최대크기가 1024일때까지 (~1024px) */
-@media screen and (max-width: 1024px) {
+/* 최소크기가 1024일때까지 (1024px~) */
+@media screen and (min-width: 1024px) {
     body {
-        background-color: lightblue;
+        background-color: lightgreen;
     }
 
     header {
-        background-color: lightblue;
+        background-color: chartreuse;
+    }
+}
+
+/* 최대크기가 1024일때까지 (~1024px) */
+@media screen and (max-width: 1024px) {
+    header {
         display: flex;
         flex-direction: column;
-    }
-
-    div {
-        border: none;
-        justify-content: center;
-        margin: 0px;
-        padding: 0px;
-
-    }
-
-    ul {
-        border: none;
-        justify-content: end;
-        margin: 0px;
-        padding: 0px;
-
-    }
-
-    article {
-        border: none;
-        margin: 10px 10px 10px 20px;
-        padding: 20px 40px;
-    }
-
-    a {
-        text-decoration: none;
-        color: black;
-        display: inline-flex;
-        /* 박스영역으로 보이도록 수정 */
-        padding: 5px;
     }
 }
