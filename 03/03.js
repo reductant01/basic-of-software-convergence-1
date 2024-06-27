@@ -14,6 +14,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
     //msg.textContent = "<h1>안녕</h1>" (내용 모두 출력)
 
     bt.addEventListener("click", ()=>{
-        msg.innerHTML = "<h1>안녕</h1>"
+        if (msg.innerHTML == "안녕") msg.innerHTML = "잘가~~"
+        else msg.innerHTML == "안녕"
     })
 });
