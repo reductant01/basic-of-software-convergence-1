@@ -8,6 +8,7 @@
   <script src='./05.js'></script>
   <link rel='stylesheet' type='text/css' href='../index.css'>
   <!-- 실행이 안된다면 04.js를 끄고 실행 -->
+  <link rel='stylesheet' type='text/css' href='./05.css'>
 </head>
 
 <body>
@@ -18,15 +19,38 @@
     </header>
     <section>
       <div id='divTitle'>
-        단위환산
+        자바스크립트 단위환산
       </div>
-      <div id='divContent'>
-        <div>
+      <form>
+        <div id='divContent'>
+          <form>
+            <div>
+              <div>
+                <select id="sel1">
+                  <option value="℃" selected>섭씨온도(℃)</option>
+                  <option value="℉">화씨온도(℉)</option>
+                </select>
+              </div>
+              <div>
+                <select id="sel2">
+                  <option value="℃">섭씨온도(℃)</option>
+                  <option value="℉" selected>화씨온도(℉)</option>
+                </select>
+              </div>
+            </div>
+            <div>
+              <div>
+                <input type="number" id="txt1">
+                <label for="txt1" id="lb1">℃</label>
+              </div>
+              <div>
+                <input type="number" id="txt2">
+                <label for="txt2" id="lb2">℉</label>
+              </div>
+            </div>
+          </form>
+        </div>
 
-        </div>
-        <div id='msg'>
-        </div>
-      </div>
     </section>
   </main>
 </body>
