@@ -2,6 +2,7 @@
 ## HTML/CSS
 1. HTML기초 : 01 > 01.html
 2. CSS기초 : 02 > 02.html
+3. js기초 : 03 > 03.html
 
 + 교수님 깃허브
     + https://github.com/pnumin/pnuweb2024_js   
