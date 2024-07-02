@@ -22,7 +22,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   // 1. DOM 요소 가져오기 
   const img = document.querySelector("img"); //태그 selector
-  const txt1 = document.querySelector("imput[type=number]"); //속성 selector
+  const txt1 = document.querySelector("input[type=number]"); //속성 selector
   const btok = document.querySelector("#btok"); //id selector
   const btcancel = document.querySelector("button[type=reset]")
 
@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // 랜덤수 생성 (초기화되기 전까지 한번만 생성)
     if (flag) {
-      const n = Math.floor(Math.random() * 100) + 1;
+      n = Math.floor(Math.random() * 100) + 1;
       console.log(`${n}`);
       flag = false;
     }
@@ -66,7 +66,8 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     // 비교
-    let usern = parseInt(txt1.value);
+    let usern = parseInt(txt1.value); //사용자입력수
+    console.log(n, usern) ;
     if ( n > usern ) { //up
       img.setAttribute("src", "./img/up.png");
     }
@@ -75,8 +76,9 @@ document.addEventListener("DOMContentLoaded", () => {
     }
     else { //성공
       img.setAttribute("src", "./img/good.png");
-      txt1.style.displat = none;
+      txt1.style.display = "none";
       btok.textContent = "번호를 다시 생성하세요";
+      btcancel.style.display = "none" ;
     }
 
   });
