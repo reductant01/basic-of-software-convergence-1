@@ -32,13 +32,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
     //문자열을 뒤집는 첫번째 방법 : 반복문
     let tm = "";
-    for(let i=txt.value.length -1; i >= 0; i--) {
+    for(let i=txt.length -1; i >= 0; i--) {
       tm = tm + txt1.value[i];
     }
     console.log(tm);
 
     //문자열을 뒤집는 두번째 방법 : 함수로
-    tm = txt.value.split("").reverse().join(""); //split은 문자열을 한글자씩 배열로 만든다. reverse는 이를 뒤집고 join은 이를 하나의 문자열로 만든다
+    tm = txt.split("").reverse().join(""); 
+    //split은 문자열을 ""안의 문자를 기준으로 쪼개서 배열로 만든다.(""안이 비어있으므로 한글자씩 쪼개는 역할을 함) 
+    //reverse는 이를 뒤집는 함수이고 join은 배열 사이사이에 ""안의 문자를 포함하여 하나의 문자열로 만든다 (""안이 비어있으므로 단순히 하나의 문자열이 된다)
     console.log(tm);
 
     //회문확인
