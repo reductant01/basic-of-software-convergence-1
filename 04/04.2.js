@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const imgCom = document.querySelector('#com')
   const imgUser = document.querySelector('#user')
   const bts = document.querySelectorAll('#divContent button')
+  //querySelectorAll은 해당되는 모든 자료를 가져와서 배열로 만든다
   const msg = document.querySelector('#msg');
 
   console.log(bts);
@@ -25,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
       imgUser.setAttribute('src', `./img/${nUser}.png`);
 
       //4. 숫자비교
-      if (nCom === nUser) {
+      if (nCom === nUser) { ///===은 문자 뿐아니라 타입까지 비교한다 nUser도 숫자로 변경할 필요가 있다
         msg.innerHTML = '<h1 id="msgRed">맞음</h1>';
       }
       else {
