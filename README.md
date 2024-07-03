@@ -8,6 +8,7 @@
 5. 화씨섭씨온도 단위 변환: 05 > 05.html
 6. 업다운 게임: 06 > 06.html
 7. 문자열 기초: 07 > 07.html
+8. 배열 오브젝트 기초: 08 > 08.html
 
 + 교수님 깃허브
     + https://github.com/pnumin/pnuweb2024_js 
