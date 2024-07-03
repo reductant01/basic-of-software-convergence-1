@@ -17,7 +17,7 @@
 + 마크다운 참조
     + https://gist.github.com/ihoneymon/652be052a0727ad59601    
 + vscode git 연동 
-    + cd 원하는 폴더 주소 (잘못 입력시 cd ..)
+    + cd (원하는 폴더 주소) (잘못 입력시 cd ..)
     + git clone (깃주소)
 + git config 설정
     + git config --global user.name "username"
